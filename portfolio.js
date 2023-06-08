@@ -66,3 +66,15 @@ document.addEventListener("DOMContentLoaded", () => {
     };
   });
 });
+
+//  contact
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  var name = document.getElementById('name').value;
+  var email = document.getElementById('email').value;
+  var message = document.getElementById('message').value;
+  
+  // Send the form data to your server-side script for processing
+  // For this example, we'll just display a success message
+  document.getElementById('successMessage').innerHTML = 'Form submitted successfully!';
+});
